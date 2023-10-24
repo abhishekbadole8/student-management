@@ -45,6 +45,7 @@ const getTasks = async (req, res) => {
   }
 };
 
+// Get a task - studentId
 const getTask = async (req, res) => {
   try {
     const studentId = req.studentId;
@@ -64,6 +65,7 @@ const getTask = async (req, res) => {
   }
 };
 
+// Get a task - studentId
 const updateTask = async (req, res) => {
   try {
     const { taskId } = req.params;
