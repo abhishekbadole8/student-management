@@ -11,6 +11,6 @@ router.post("/register", createAdmin);
 router.post("/login", getAdmin);
 
 router.post("/add-student", adminAuthMiddleware, createStudent);
-router.post("/assign-task", adminAuthMiddleware, assignTask);
+router.post("/tasks/assign", adminAuthMiddleware, assignTask);
 
 module.exports = router;
